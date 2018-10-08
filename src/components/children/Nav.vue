@@ -13,11 +13,19 @@ export default {};
 </script>
 
 <style lang="less" scoped>
+@import '../../styles/variables.less';
 .nav
 {
+    display: flex;
     a
     {
+        line-height: 80px;
+
+        display: block;
+
         padding: 0 20px;
+
+        color: @font0;
     }
 }
 
