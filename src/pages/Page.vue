@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1> world</h1>
+        <h1>world</h1>
         <router-link to="/">back to Home</router-link>
     </div>
 </template>
@@ -14,5 +14,3 @@ export default {
 <style scoped>
 
 </style>
-
-
