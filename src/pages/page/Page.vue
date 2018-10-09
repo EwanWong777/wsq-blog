@@ -1,5 +1,5 @@
 <template>
-    <div class="m-home">
+    <div class="m-page">
         <Left></Left>
     </div>
 </template>
@@ -13,7 +13,7 @@ export default {
 
 <style lang="less" scoped>
 @import "../../styles/variables.less";
-.m-home{
+.m-page{
     height: 100%;
 }
 </style>

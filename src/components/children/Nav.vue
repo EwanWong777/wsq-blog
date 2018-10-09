@@ -1,10 +1,8 @@
 <template>
-    <div class="nav">
-        <router-link to="/">{{ $t("common.home") }}</router-link>
+    <div class="m-nav">
+        <router-link to="/home">{{ $t("common.home") }}</router-link>
         <router-link to="/page">{{ $t("common.diary") }}</router-link>
-        <router-link to="/page">{{ $t("common.works") }}</router-link>
-        <router-link to="/page">{{ $t("common.message") }}</router-link>
-        <router-link to="/page">{{ $t("common.about") }}</router-link>
+        <router-link to="/about">{{ $t("common.about") }}</router-link>
     </div>
 </template>
 
@@ -13,22 +11,23 @@ export default {};
 </script>
 
 <style lang="less" scoped>
-@import '../../styles/variables.less';
-.nav
-{
-    display: flex;
-    a
-    {
-        line-height: 80px;
+@import "../../styles/variables.less";
+.m-nav {
+  text-align: right;
+  padding: 40px;
+  a{
+    line-height: 72px;
 
-        display: block;
+    display: block;
+    font-size: 18px;
 
-        padding: 0 20px;
-
-        color: @font0;
-    }
+    color: @white0;
+    letter-spacing: 2px;
+  }
+  .router-link-active{
+      color: @blue1;
+  }
 }
-
 </style>
 
 

@@ -1,11 +1,11 @@
 <template>
-    <div class="logo">
-      <div class="logo-img">
+    <div class="m-logo">
+      <div class="m-logo-img">
         <img src="../../assets/logo.svg" alt="">
       </div>
-      <div class="logo-text">
-        少秋的博客
-      </div>
+      <h1 class="m-logo-text">
+        {{ $t("common.title") }}
+      </h1>
     </div>
 </template>
 
@@ -14,27 +14,20 @@ export default {};
 </script>
 
 <style lang="less" scoped>
-@import '../../styles/variables.less';
-.logo
-{
-    display: flex;
-
-    padding: 25px 0;
+@import "../../styles/variables.less";
+.m-logo {
+  text-align: right;
+  padding: 40px;
 }
-
-.logo-img
-{
-    img
-    {
-        height: 100%;
-    }
+.m-logo-img {
+  height: 60px;
+  margin-bottom: 40px;
+  img {
+    height: 100%;
+  }
 }
-.logo-text
-{
-    font-size: 24px;
-    line-height: 30px;
-
-    margin-left: 10px;
+.m-logo-text {
+  color: @white0;
+  letter-spacing: 2px;
 }
-
 </style>
