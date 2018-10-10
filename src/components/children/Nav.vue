@@ -1,6 +1,6 @@
 <template>
     <div class="m-nav">
-        <router-link to="/">{{ $t("common.home") }}</router-link>
+        <router-link to="/home">{{ $t("common.home") }}</router-link>
         <router-link to="/page">{{ $t("common.diary") }}</router-link>
         <router-link to="/about">{{ $t("common.about") }}</router-link>
     </div>
