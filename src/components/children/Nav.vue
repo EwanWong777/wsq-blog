@@ -25,7 +25,7 @@ export default {};
     letter-spacing: 2px;
   }
   .router-link-active{
-      color: @blue1;
+      font-weight: bold;
   }
 }
 </style>

@@ -1,15 +1,16 @@
-import Vue from 'vue';
-import Cookies from 'js-cookie';
-import Element from 'element-ui';
+import Vue from 'vue'
+import Cookies from 'js-cookie'
+import Element from 'element-ui'
 
-import 'normalize.less/normalize.less';
-import 'element-ui/lib/theme-chalk/index.css';
-import './styles/common.less';
+import 'normalize.less/normalize.less'
+import 'element-ui/lib/theme-chalk/index.css'
+import '@fortawesome/fontawesome-free/css/all.css'
+import './styles/common.less'
 
-import App from './App';
-import router from './router';
-import i18n from './i18n';
-import store from './store';
+import App from './App'
+import router from './router'
+import i18n from './i18n'
+import store from './store'
 
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium',
