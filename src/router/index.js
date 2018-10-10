@@ -10,23 +10,18 @@ import About from '../pages/about/About'
 
 const routes = new VueRouter({
     routes: [{
-        path: '/',
-        component: App,
-        redirect: '/home',
-        children: [{
-                path: '/home',
-                component: Home,
-            },
-            {
-                path: '/page',
-                component: Page,
-            },
-            {
-                path: '/about',
-                component: About,
-            },
-        ]
-    }]
+            path: '/',
+            component: Home,
+        },
+        {
+            path: '/page',
+            component: Page,
+        },
+        {
+            path: '/about',
+            component: About,
+        }
+    ]
 })
 
 export default routes

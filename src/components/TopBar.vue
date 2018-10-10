@@ -1,7 +1,7 @@
 <template>
     <div class="m-topbar">
         <div class="m-toggle-btn">
-          <i class="fas fa-bars" @click="openSideBar"></i>
+          <i class="fas fa-bars" @click="toggleSideBar"></i>
         </div>
     </div>
 </template>
@@ -11,7 +11,7 @@ import { mapMutations } from "vuex";
 export default {
   methods: {
     ...mapMutations({
-      openSideBar: "OPEN_SIDEBAR"
+      toggleSideBar: "TOGGLE_SIDEBAR"
     })
   }
 };

@@ -16,8 +16,8 @@ export default {};
 <style lang="less" scoped>
 @import "../../styles/variables.less";
 .m-logo {
-  text-align: right;
-  padding: 40px;
+  text-align: center;
+  padding: 40px 0;
 }
 .m-logo-img {
   height: 60px;

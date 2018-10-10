@@ -1,9 +1,9 @@
 <template>
     <div class="m-home">
-        <div class="m-left" v-if="openSideBar">
+        <div class="m-left" :class="showSideBar?'m-left-show':'m-left-hide'">
             <SideBar></SideBar>
         </div>
-        <div class="m-right">
+        <div class="m-right" :class="showSideBar?'m-right-short':'m-right-long'">
             <TopBar></TopBar>
             <div class="m-body">
                 
@@ -19,7 +19,7 @@ import { mapState } from "vuex";
 export default {
   components: { SideBar, TopBar },
   computed: {
-    ...mapState(["openSideBar"])
+    ...mapState(["showSideBar"])
   }
 };
 </script>
@@ -34,16 +34,33 @@ export default {
   position: absolute;
   left: 0;
   top: 0;
-  width: 38.2%;
+  width: 360px;
   height: 100%;
   background-color: @black0;
+  z-index: 100;
+}
+.m-left-show {
+  left: 0;
+  transition: all 0.5s;
+}
+.m-left-hide {
+  left: -360px;
+  transition: all 0.5s;
 }
 .m-right {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
-  width: 61.8%;
+  width: 100%;
   height: 100%;
   background-color: @blueGrey50;
+}
+.m-right-short {
+  padding-left: 360px;
+  transition: all 0.5s;
+}
+.m-right-long {
+  padding-left: 0;
+  transition: all 0.5s;
 }
 </style>

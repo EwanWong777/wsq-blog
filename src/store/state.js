@@ -1,5 +1,5 @@
 const state = {
-  openSideBar: true,
+  showSideBar: true,
 };
 
 export default state;

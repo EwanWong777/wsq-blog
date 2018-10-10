@@ -1,7 +1,7 @@
-const OPEN_SIDEBAR = 'OPEN_SIDEBAR'
+const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR'
 
 export default {
-  [OPEN_SIDEBAR](state) {
-    state.openSideBar = !state.openSideBar
+  [TOGGLE_SIDEBAR](state) {
+    state.showSideBar = !state.showSideBar
   },
 };

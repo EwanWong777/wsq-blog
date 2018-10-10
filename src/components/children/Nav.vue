@@ -1,6 +1,6 @@
 <template>
     <div class="m-nav">
-        <router-link to="/home">{{ $t("common.home") }}</router-link>
+        <router-link to="/">{{ $t("common.home") }}</router-link>
         <router-link to="/page">{{ $t("common.diary") }}</router-link>
         <router-link to="/about">{{ $t("common.about") }}</router-link>
     </div>
@@ -13,9 +13,9 @@ export default {};
 <style lang="less" scoped>
 @import "../../styles/variables.less";
 .m-nav {
-  text-align: right;
-  padding: 40px;
-  a{
+  text-align: center;
+  padding: 40px 0;
+  a {
     line-height: 72px;
 
     display: block;
@@ -24,8 +24,8 @@ export default {};
     color: @white0;
     letter-spacing: 2px;
   }
-  .router-link-active{
-      font-weight: bold;
+  .router-link-active {
+    font-weight: bold;
   }
 }
 </style>

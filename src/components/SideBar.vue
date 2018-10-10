@@ -27,7 +27,6 @@ export default {
   height: 100%;
   position: relative;
 }
-
 .m-copyright {
   position: absolute;
   left: 0;
@@ -37,8 +36,7 @@ export default {
   h5 {
     height: 80px;
     line-height: 80px;
-    padding-right: 40px;
-    text-align: right;
+    text-align: center;
     color: @font2;
   }
 }
