@@ -1,6 +1,6 @@
 <template>
-    <div class="m-page">
-        
+    <div class="m-article">
+      <h1>article</h1>
     </div>
 </template>
 

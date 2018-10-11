@@ -1,6 +1,6 @@
 <template>
-    <div class="m-home">
-      <h1>home</h1>
+    <div class="m-message">
+      <h1>message</h1>
     </div>
 </template>
 

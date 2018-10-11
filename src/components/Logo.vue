@@ -1,7 +1,7 @@
 <template>
     <div class="m-logo">
       <div class="m-logo-img">
-        <img src="../../assets/logo.svg" alt="">
+        <img src="../assets/logo.svg" alt="">
       </div>
       <h1 class="m-logo-text">
         {{ $t("common.title") }}
@@ -14,20 +14,19 @@ export default {};
 </script>
 
 <style lang="less" scoped>
-@import "../../styles/variables.less";
+@import "../styles/variables.less";
 .m-logo {
   text-align: center;
-  padding: 40px 0;
-}
-.m-logo-img {
-  height: 60px;
-  margin-bottom: 40px;
-  img {
-    height: 100%;
+  .m-logo-img {
+    height: 60px;
+    margin-bottom: 40px;
+    img {
+      height: 100%;
+    }
   }
-}
-.m-logo-text {
-  color: @white0;
-  letter-spacing: 2px;
+  .m-logo-text {
+    color: @white0;
+    letter-spacing: 2px;
+  }
 }
 </style>

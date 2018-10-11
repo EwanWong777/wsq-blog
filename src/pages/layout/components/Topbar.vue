@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "../styles/variables.less";
+@import "../../../styles/variables.less";
 .m-topbar {
   height: 80px;
   background-color: @white0;

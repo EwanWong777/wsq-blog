@@ -6,14 +6,14 @@
 
 <script>
 export default {
-  name: 'app'
-}
+  name: "app"
+};
 </script>
 
 <style lang="less" scoped>
-#app{
+#app {
   height: 100%;
   min-height: 768px;
+  overflow: auto;
 }
 </style>
-
