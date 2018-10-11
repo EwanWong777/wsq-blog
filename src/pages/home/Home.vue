@@ -25,9 +25,9 @@ export default {};
   // background-position: center;
   // background-size: cover;
   .m-banner-container {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 80px 20px;
   }
 }
 .m-banner-text {

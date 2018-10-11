@@ -1,10 +1,11 @@
 <template>
     <div class="m-topbar">
         <div class="m-topbar-left">
-          <Logo></Logo>
+          <Logo/>
         </div>
         <div class="m-topbar-right">
-          <Nav></Nav>
+          <Nav/>
+          <Language/>
         </div>
     </div>
 </template>
@@ -12,10 +13,12 @@
 <script>
 import Logo from "@/components/Logo";
 import Nav from "@/components/Nav";
+import Language from "@/components/Language";
 export default {
   components: {
     Logo,
     Nav,
+    Language,
   }
 };
 </script>
@@ -25,9 +28,14 @@ export default {
 .m-topbar {
   height: 80px;
   padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
+  .m-topbar-left {
+    float: left;
+  }
+  .m-topbar-right {
+    display: flex;
+    float: right;
+  }
 }
 </style>

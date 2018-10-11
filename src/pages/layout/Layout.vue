@@ -1,13 +1,13 @@
 <template>
     <div class="m-layout">
         <div class="m-layout-header">
-          <Topbar></Topbar>
+          <Topbar/>
         </div>
         <div class="m-layout-body">
           <router-view></router-view>
         </div>
         <div class="m-layout-bottom">
-          <Copyright></Copyright>
+          <Copyright/>
         </div>
     </div>
 </template>
