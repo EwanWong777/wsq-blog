@@ -15,15 +15,16 @@ export default {};
 <style lang="less" scoped>
 @import "../styles/variables.less";
 .m-nav {
-  text-align: center;
+  display: flex;
   a {
-    line-height: 72px;
+    line-height: 80px;
 
     display: block;
     font-size: 18px;
 
-    color: @white0;
+    color: @white;
     letter-spacing: 2px;
+    padding: 0 20px;
   }
   .router-link-active {
     font-weight: bold;

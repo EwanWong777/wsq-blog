@@ -11,9 +11,4 @@ export default {
 </script>
 
 <style lang="less" scoped>
-#app {
-  height: 100%;
-  min-height: 768px;
-  overflow: auto;
-}
 </style>

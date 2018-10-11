@@ -1,18 +1,21 @@
 <template>
     <div class="m-topbar">
-        <div class="m-toggle-btn">
-          <i class="fas fa-bars" @click="toggleSideBar"></i>
+        <div class="m-topbar-left">
+          <Logo></Logo>
+        </div>
+        <div class="m-topbar-right">
+          <Nav></Nav>
         </div>
     </div>
 </template>
 
 <script>
-import { mapMutations } from "vuex";
+import Logo from "@/components/Logo";
+import Nav from "@/components/Nav";
 export default {
-  methods: {
-    ...mapMutations({
-      toggleSideBar: "TOGGLE_SIDEBAR"
-    })
+  components: {
+    Logo,
+    Nav,
   }
 };
 </script>
@@ -21,17 +24,10 @@ export default {
 @import "../../../styles/variables.less";
 .m-topbar {
   height: 80px;
-  background-color: @white0;
-  border: 1px solid @border0;
-}
-.m-toggle-btn {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  i {
-    font-size: 24px;
-    cursor: pointer;
-  }
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 </style>
