@@ -1,5 +1,7 @@
 export default {
     common: {
+        // 网页语言
+        lang: 'ENGLISH',
         // 网页标题
         title: 'Richard Wang\'s blog',
         // 导航

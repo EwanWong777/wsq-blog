@@ -1,5 +1,7 @@
 export default {
     common: {
+        // 网页语言
+        lang: '中文',
         // 网页标题
         title: '少秋的博客',
         // 导航

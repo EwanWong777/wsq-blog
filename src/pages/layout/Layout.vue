@@ -6,9 +6,9 @@
         <div class="m-layout-body">
           <router-view></router-view>
         </div>
-        <div class="m-layout-bottom">
+        <!-- <div class="m-layout-bottom">
           <Copyright/>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -21,15 +21,19 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "../../styles/variables.less";
-.m-layout-header {
-  z-index: 100;
-  position: relative;
+@import '../../styles/variables.less';
+.m-layout-header
+{
+    position: relative;
+    z-index: 100;
 }
-.m-layout-body {
-  margin-top: -80px;
+.m-layout-body
+{
+    margin-top: -80px;
 }
-.m-layout-bottom{
-  padding: 20px;
+.m-layout-bottom
+{
+    padding: 20px;
 }
+
 </style>

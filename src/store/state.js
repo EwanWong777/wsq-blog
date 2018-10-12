@@ -1,5 +1,8 @@
+import Cookies from 'js-cookie'
+
 const state = {
-  showSideBar: true,
+  language: Cookies.get('language') || 'en',
+  clientHeight: document.documentElement.clientHeight
 };
 
 export default state;

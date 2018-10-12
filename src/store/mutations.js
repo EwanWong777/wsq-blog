@@ -1,7 +1,12 @@
-const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR'
+import Cookies from 'js-cookie'
 
-export default {
-  [TOGGLE_SIDEBAR](state) {
-    state.showSideBar = !state.showSideBar
+const SET_LANGUAGE = 'SET_LANGUAGE'
+
+const mutations = {
+  [SET_LANGUAGE](state, language) {
+    state.language = language
+    Cookies.set('language', language)
   },
 };
+
+export default mutations
