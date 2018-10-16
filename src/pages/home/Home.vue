@@ -24,50 +24,48 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '../../styles/variables.less';
-.m-banner
-{
-    position: relative;
+@import "../../styles/variables.less";
+.m-banner {
+  position: relative;
 
-    background-color: @black;
+  background-color: @black;
 }
-.m-banner-bg
-{
-    position: absolute;
-    top: 0;
-    left: 0;
+.m-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    opacity: .3;
-    background-image: url(../../assets/home-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  opacity: 0.3;
+  background-image: url(../../assets/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.m-banner-container
-{
-    position: absolute;
-    top: 0;
-    left: 0;
+.m-banner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-.m-banner-content
-{
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-top: 160px;
+.m-banner-content {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.m-banner-text
-{
-    color: @white;
-    h1
-    {
-        margin-bottom: 20px;
-    }
+.m-banner-text {
+  color: @white;
+  text-align: center;
+  h1 {
+    margin-bottom: 40px;
+    font-size: 72px;
+  }
 }
-
 </style>
