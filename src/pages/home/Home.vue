@@ -5,8 +5,9 @@
         <div class="m-banner-container">
           <div class="m-banner-content">
             <div class="m-banner-text">
-              <h1>{{ $t("home.banner_title") }}</h1>
-              <h2>{{ $t("home.banner_subtitle") }}</h2>
+              <img src="../../assets/title.svg" alt="">
+              <!-- <h1>{{ $t("home.banner_title") }}</h1> -->
+              <!-- <h2>{{ $t("home.banner_subtitle") }}</h2> -->
             </div>
           </div>
         </div>
@@ -58,12 +59,20 @@ export default {
 .m-banner-content
 {
     max-width: 1280px;
+    height: 100%;
     margin: 0 auto;
-    padding-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .m-banner-text
 {
     color: @white;
+    text-align: center;
+    img{
+      height: 160px;
+      margin-bottom: 20px;
+    }
     h1
     {
         margin-bottom: 20px;
